@@ -1,0 +1,87 @@
+In this project I implemented an a\* algorithm to help search through
+the states. I used the base cost as a distance and then added in a
+heuristic that weighs in the number of items in the current state that
+are in the final state. I also implemented pruning techinques that help
+keep the count of resources down and that ony allows for one of each
+tool. I still seem to occassionally hit an error that sends the search
+into a circular loop (especially when searching for pickaxes for some
+reason). Due to the time constraints I was not able to optimize these as
+much as I would have liked. Another heuristic I would be interested in
+attempted if I had more time would be to recursively search the tree and
+break up each task into a series of smaller subtasks that link together
+and build the final path. The best I could get the algorithm to search
+as it is was
+
+Kylers-MacBook-Pro:p5 kylerkiminki$ python craft_planner.py 
+All items: ['bench', 'cart', 'coal', 'cobble', 'furnace', 'ingot',
+'iron_axe', 'iron_pickaxe', 'ore', 'plank', 'rail', 'stick',
+'stone_axe', 'stone_pickaxe', 'wood', 'wooden_axe', 'wooden_pickaxe']
+Initial inventory: {}
+Goal: {'cart': 1}
+Time: 1.455100763000246
+{'wood': 1}
+{'plank': 4}
+{'bench': 1}
+{'bench': 1, 'wood': 1}
+{'plank': 4, 'bench': 1}
+{'plank': 4, 'bench': 1, 'wood': 1}
+{'plank': 8, 'bench': 1}
+{'plank': 6, 'stick': 4, 'bench': 1}
+{'plank': 3, 'stick': 2, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'stick': 2, 'cobble': 1, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'stick': 2, 'cobble': 2, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'stick': 2, 'cobble': 3, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 1}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 2}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 3}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 4}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 5}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 6}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 7}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 8}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'furnace': 1,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 1, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 1, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 1, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 2, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 2, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 2, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 3, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 3, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 3, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 4, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 4, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 4, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 5, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'cart': 1, 'plank': 3,
+'wooden_pickaxe': 1}
+
+{'total_cost': 128, 'length': 38}
+

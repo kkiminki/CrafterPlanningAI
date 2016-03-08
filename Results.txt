@@ -1,0 +1,73 @@
+cBook-Pro:p5 kylerkiminki$ python craft_planner.py 
+All items: ['bench', 'cart', 'coal', 'cobble', 'furnace', 'ingot',
+'iron_axe', 'iron_pickaxe', 'ore', 'plank', 'rail', 'stick',
+'stone_axe', 'stone_pickaxe', 'wood', 'wooden_axe', 'wooden_pickaxe']
+Initial inventory: {}
+Goal: {'cart': 1}
+Time: 1.455100763000246
+{'wood': 1}
+{'plank': 4}
+{'bench': 1}
+{'bench': 1, 'wood': 1}
+{'plank': 4, 'bench': 1}
+{'plank': 4, 'bench': 1, 'wood': 1}
+{'plank': 8, 'bench': 1}
+{'plank': 6, 'stick': 4, 'bench': 1}
+{'plank': 3, 'stick': 2, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'stick': 2, 'cobble': 1, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'stick': 2, 'cobble': 2, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'stick': 2, 'cobble': 3, 'bench': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 1}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 2}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 3}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 4}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 5}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 6}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 7}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1,
+'cobble': 8}
+{'plank': 3, 'bench': 1, 'stone_pickaxe': 1, 'furnace': 1,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 1, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 1, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 1, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 2, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 2, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 2, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 3, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 3, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 3, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 4, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 4, 'plank': 3,
+'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'coal': 1, 'plank': 3,
+'ingot': 4, 'wooden_pickaxe': 1, 'ore': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'ingot': 5, 'plank': 3,
+'wooden_pickaxe': 1}
+{'bench': 1, 'stone_pickaxe': 1, 'furnace': 1, 'cart': 1, 'plank': 3,
+'wooden_pickaxe': 1}
+
+{'total_cost': 128, 'length': 38}
+
